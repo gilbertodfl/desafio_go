@@ -13,9 +13,9 @@ Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o
 
 A imagem de nosso projeto Go precisa ter menos de 2MB
 
-            Comandos executados:
+#Comandos executados:
 
-PASSO 01: Crie o arquivo Dockerfile
+###PASSO 01: Crie o arquivo Dockerfile
     mkdir go 
     cd go 
     vim Dockerfile
@@ -30,7 +30,7 @@ PASSO 01: Crie o arquivo Dockerfile
         COPY --from=builder /app/hello_world /app/hello_world
         CMD [ "/app/hello_world" ]
 
-PASSO 02: Crie o arquivo hello_world.go
+#PASSO 02: Crie o arquivo hello_world.go
 vim hello_world.go
     package main
 
