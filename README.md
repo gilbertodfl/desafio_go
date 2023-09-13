@@ -34,7 +34,7 @@ A imagem de nosso projeto Go precisa ter menos de 2MB
         COPY --from=builder /app/hello_world /app/hello_world
         CMD [ "/app/hello_world" ]
 
-# PASSO 02: Crie o arquivo hello_world.go
+### PASSO 02: Crie o arquivo hello_world.go
 vim hello_world.go
     package main
 
@@ -44,17 +44,17 @@ vim hello_world.go
         fmt.Println("Full Cycle Rocks!!!")
     }
 
-PASSO 03: Crie a imagem
+### PASSO 03: Crie a imagem
     docker build -t gilbertofl/project_go .
 
-PASSO 04: Rode a imagem
+### PASSO 04: Rode a imagem
 
     docker run -it --rm --name full_cyle_rocks gilbertofl/project_go
 
     Full Cycle Rocks!!!
 
-PASSO 05: Confira o tamanho
+### PASSO 05: Confira o tamanho
     gilberto@bsb239170:~/docker/go$ docker image ls | grep projec
     gilbertofl/project_go  latest  9ecfb45d9f8d   5 minutes ago   1.17MB    
-PASSO 06: Coloque no docker para avaliação.
+### PASSO 06: Coloque no docker para avaliação.
     docker push gilbertofl/project_go    # desafio_go
