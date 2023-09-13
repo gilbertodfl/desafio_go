@@ -53,4 +53,4 @@ PASSO 05: Confira o tamanho
     gilberto@bsb239170:~/docker/go$ docker image ls | grep projec
     gilbertofl/project_go  latest  9ecfb45d9f8d   5 minutes ago   1.17MB    
 PASSO 06: Coloque no docker para avaliação.
-    docker push gilbertofl/project_go    
+    docker push gilbertofl/project_go    # desafio_go
