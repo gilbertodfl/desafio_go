@@ -14,6 +14,10 @@ Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o
 A imagem de nosso projeto Go precisa ter menos de 2MB
 
             Comandos executados:
+            isto é um teste
+            isto é um teste
+            isto é um teste
+            isto é um teste
 
 PASSO 01: Crie o arquivo Dockerfile
     mkdir go 
